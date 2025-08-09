@@ -1,0 +1,443 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: pinyon;
+    src: url(fonts/PinyonScript-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsS;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppinsR;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsB;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+body{
+    background-color: #0f0f0f;
+}
+p{
+    color: white;
+    font-family: poppinsR;
+}
+h3{
+    color: white;
+    font-family: Ubuntu;
+    margin-bottom: 0;
+}
+#aulasP{
+    display: none;
+}
+.naveBar{
+    display: flex;
+    margin-left: 15%;
+}
+.naveItem{
+    transition-duration: 200ms;
+    font-family: poppinsS;
+}
+
+.orange-box{
+    display: flex;
+    background-color: #ff7b22;
+    border-radius: 7px;
+    margin: auto;
+
+    box-shadow: 10px 10px #6212e2;
+}
+
+.apolo{
+    align-self: end;
+}
+
+.frase{
+    font-family: Ubuntu;
+    border-left: solid white;
+    height: max-content;
+
+    align-self: center;
+}
+
+.autor{
+    font-family: poppinsR;
+}
+
+.titulo{
+    text-align: center;
+
+}
+
+.novo{
+    font-family: helvetica;
+    font-weight: bold;
+    margin: 0;
+    transition-duration: 200ms;
+}
+.tom{
+    font-family: pinyon;
+    margin: 0;
+    transition-duration: 200ms;
+}
+.escola{
+    font-family: poppinsS;
+    background-color: #ff7b22;
+    width: fit-content;
+
+    margin: auto;
+}
+
+
+.content{
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.descricao{
+    border-bottom: solid white ;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.textWrap{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#aulas{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#cursos{
+    color: #ff7b22;
+    text-decoration: none;
+    font-weight: bold;
+}
+#guitar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 100%;
+    justify-self: center;
+}
+.link{
+    color: #ff7b22;
+}
+.link:visited{
+    color: #ff7b22;
+}
+.faq{
+    width: 55%;
+    margin: auto;
+}
+#faqDes{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.pergunta{
+    margin-bottom: 10px;
+}
+.question{
+    margin: 0;
+    color: black;
+    font-family: poppinsS;
+    background-color: #ff7b22;
+    padding: 8px;
+}
+.answer{
+    margin: 0;
+    background-color: #1e082c;
+    padding: 5px;
+    animation-name: slideDown;
+    animation-duration: 300ms;
+}
+@keyframes slideDown{
+    from {margin-top: -10px;}
+    to {margin-top: 0;}
+}
+.none{
+    display: none;
+}
+/*tela de pc*/
+@media screen and (min-width: 1601px) {
+    .apoloP{
+        display: none;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    .naveItem:hover{
+        font-size: 19px;
+    }
+
+    .orange-box{
+        width: 65%;
+        height: 450px;
+    }
+    .apolo{
+        margin-left: 6%;
+        height: 99%;
+    }
+    .frase{
+        padding-left: 20px;
+        width: 45%;
+        margin-left: 6%;
+
+        font-size: 32px;
+    }
+    .autor{
+        font-size: 20px;
+    }
+
+    .titulo{
+        margin-top: 2%;
+    }
+    .novo{
+        font-size: 120px;
+        letter-spacing: -10px;
+    }
+    .tom{
+        font-size: 120px;
+        margin-top: -60px;
+    }
+    .novo:hover, .tom:hover{
+        font-size: 125px;
+    }
+    .escola{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .descricao{
+        font-size: 20px;
+        text-indent: 60px;
+
+        margin-top: 5%;
+        padding-bottom: 70px;
+    }
+    .grid{
+        height: 450px;
+    }
+    #aulas{
+        height: 80%;
+    }
+    .question{
+        font-size: 20px;
+    }
+    .answer{
+        font-size: 18px;
+    }
+}
+
+/*tela de notebook*/
+@media screen and (max-width: 1600px) and (min-width: 426px){
+    .apoloP{
+        display: none;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .naveItem:hover{
+        font-size: 17px;
+    }
+
+    .orange-box{
+        width: 70%;
+        height: 350px;
+    }
+    .apolo{
+        margin-left: 6%;
+        height: 99%;
+    }
+    .frase{
+        padding-left: 20px;
+        width: 45%;
+        margin-left: 6%;
+
+        font-size: 25px;
+    }
+    .autor{
+        font-size: 16px;
+    }
+
+    .titulo{
+        margin-top: 2%;
+    }
+    .novo{
+        font-size: 95px;
+        letter-spacing: -10px;
+    }
+    .tom{
+        font-size: 95px;
+        margin-top: -50px;
+    }
+    .novo:hover, .tom:hover{
+        font-size: 100px;
+    }
+    .escola{
+        font-size: 14px;
+        margin-top: -20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .descricao{
+        font-size: 17px;
+        text-indent: 70px;
+
+        margin-top: 5%;
+        padding-bottom: 70px;
+    }
+    .grid{
+        height: 300px;
+    }
+    #aulas{
+        height: 85%;
+    }
+    .answer{
+        font-size: 14px;
+    }
+    .question{
+        font-size: 17px;
+    }
+}
+    
+/*tela de celular*/
+@media screen and (max-width: 425px){
+    .apolo{
+        display: none;
+    }
+    #guitar{
+        display: none;
+    }
+    #aulas{
+        display: none;
+    }
+    h3{
+        font-size: 30px;
+    }
+
+    .naveBar{
+        width: 100%;
+        margin: auto;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    .orange-box{
+        width: 95%;
+        height: 350px;
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+
+    }
+    .apoloP{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 75%;
+        justify-self: end;
+        align-self: end;
+    }
+    .frase{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-left: 20px;
+        width: 90%;
+        margin-left: 6%;
+
+        font-size: 25px;
+    }
+    .fraseS{
+        background-color: #ff7b22;
+    }
+    .autor{
+        font-size: 16px;
+        background-color: #ff7b22;
+    }
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20%;
+    }
+    .titulo{
+        margin-top: 2%;
+    }
+    .novo{
+        font-size: 80px;
+        letter-spacing: -5px;
+
+        margin-top: 10%;
+    }
+    .tom{
+        font-size: 80px;
+        margin-top: -50px;
+    }
+    .novo:hover, .tom:hover{
+        font-size: 95px;
+    }
+    .escola{
+        font-size: 14px;
+        margin-top: -20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .descricao{
+        font-size: 15px;
+        text-indent: 20px;
+
+        margin-top: 15%;
+        padding-bottom: 70px;
+    }
+    .grid{
+        height: max-content;
+    }
+    .content.grid{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .textWrap{
+        grid-column: 1/3;
+        justify-content: center;
+
+        font-size: 13px;
+    }
+    #aulasP{
+        display: block;
+        width: 100%;
+    }
+    #saiba{
+        margin-top: 0;
+        margin-left: 5%;
+    }
+    .faq{
+        width: 95%;
+        margin: auto;
+    }
+    .answer{
+        font-size: 14px;
+    }
+    .question{
+        font-size: 17px;
+    }
+}

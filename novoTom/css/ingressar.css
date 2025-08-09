@@ -1,0 +1,293 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: pinyon;
+    src: url(fonts/PinyonScript-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsS;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppinsR;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsB;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+body{
+    background-color: #0f0f0f;
+}
+p{
+    color: white;
+}
+.naveBar{
+    display: flex;
+    font-family: poppinsS;
+    margin-left: 15%;
+}
+.naveItem{
+    transition-duration: 200ms;
+}
+
+h3{
+    color: white;
+    font-family: Ubuntu;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.desc{
+    font-family: poppinsR;
+}
+.content{
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.textWrap{
+    grid-column: 1 / 2;
+}
+.infoBox{
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    background-color: #ff7b22;
+
+
+    box-shadow: 15px 15px #6212e2;
+    border-radius: 5px;
+}
+.white{
+    font-family: poppinsB;
+    text-align: center;
+}
+.purple{
+    font-family: poppinsR;
+    color: #6212e2;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+
+/*tela de pc*/
+@media screen and (min-width: 1601px){
+    .naveItem{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    .naveItem:hover{
+        font-size: 19px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+    .desc{
+        font-size: 20px;
+    }
+    .grid{
+        height: 600px;
+        margin-top: 80px;
+    }
+    .infoBox{
+        height: 95%;
+        width: 65%;
+    }
+    #first{
+        margin-top: 5%;
+    }
+    .white{
+        font-size: 25px;
+        margin-bottom: 6px;
+    }
+    .purple{
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    #socialMedia img{
+        width: 40px;
+        margin-left: 1%;
+        margin-top: 3%;
+    }
+
+    #map{
+        margin-top: 2%;
+        width: 800px;
+        height: 600px;
+        box-shadow: 8px 8px #ff7b22, 13px 13px #6212e2;
+        border-radius: 5px;
+    }
+}
+
+/*tela de notebook*/
+@media screen and (max-width: 1600px) and (min-width: 769px){
+    .naveItem{
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .naveItem:hover{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .desc{
+        font-size: 17px;
+    }
+    .grid{
+        height: 600px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .infoBox{
+        height: 81%;
+        width: 75%;
+    }
+    #first{
+        margin-top: 5%;
+    }
+    .white{
+        font-size: 22px;
+        margin-bottom: 4px;
+        margin-top: 16px;
+    }
+    .purple{
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+    #socialMedia img{
+        width: 40px;
+        margin-left: 1%;
+        margin-top: 3%;
+    }
+
+    #map{
+        margin-top: 2%;
+        width: 800px;
+        height: 400px;
+        box-shadow: 8px 8px #ff7b22, 13px 13px #6212e2;
+        border-radius: 5px;
+
+    }
+}
+
+/*tela de tablet*/
+@media screen and (max-width: 769px) and (min-width: 426px){
+    .content{
+        margin: 5%;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .naveItem:hover{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .desc{
+        font-size: 17px;
+    }
+    .grid{
+        height: 600px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .infoBox{
+        height: 81%;
+        width: 75%;
+    }
+    #first{
+        margin-top: 5%;
+    }
+    .white{
+        font-size: 22px;
+        margin-bottom: 4px;
+        margin-top: 16px;
+    }
+    .purple{
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+    #socialMedia img{
+        width: 40px;
+        margin-left: 1%;
+        margin-top: 3%;
+    }
+
+    #map{
+        margin-top: 2%;
+        width: 100%;
+        height: 400px;
+        box-shadow: 8px 8px #ff7b22, 13px 13px #6212e2;
+        border-radius: 5px;
+
+    }
+}
+
+/*tela de celular*/
+@media screen and (max-width: 425px){
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20%;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .desc{
+        font-size: 15px;
+    }
+    .naveBar{
+        width: 100%;
+        margin: auto;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .grid{
+        display: block;
+    }
+    .infoBox{
+        height: 95%;
+        width: 100%;
+
+        box-shadow: 7px 7px #6212e2;
+    }
+    #first{
+        margin-top: 5%;
+    }
+    .white{
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .purple{
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    #socialMedia img{
+        width: 35px;
+        margin-left: 0.5%;
+        margin-top: 2%;
+    }
+    #map{
+        margin-top: 2%;
+        width: 100%;
+        height: 350px;
+        box-shadow: 5px 5px #ff7b22, 10px 10px #6212e2;
+        border-radius: 5px;
+    }
+}

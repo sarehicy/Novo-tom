@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Novo Tom - Escola de Música</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="naveBar">
+            <p class="naveItem currentPa">Ínicio</p>
+            <a class="naveItem" href="cursos.html"><p style="font-family: poppinsS;">Cursos</p></a>
+            <a class="naveItem" href="ingressar.html"><p style="font-family: poppinsS;">Como Ingressar</p></a>
+        </div>
+
+        <div class="orange-box">
+            <img class="apolo" src="img/apolo3.png" alt="Imagem de Apolo, deus grego da música">
+            <img class="apoloP" src="img/apoloPhone.png" alt="Imagem de Apolo, deus grego da música">
+            <p class="frase">"A vida sem a música é simplesmente um erro<span class="fraseS">, uma tarefa cansativa, um exílio.</span>"<br><span class="autor">Friedrich Nietzsche</span></p>
+        </div>
+
+        <div class="titulo">
+            <p class="novo">Novo</p>
+            <p class="tom">tom</p>
+            <p class="escola">escola de música</p>
+        </div>
+        <div class="content">
+            <p class="descricao">A escola de música Novo Tom é uma empresa voltada para o ensino musical,
+                 desde instrumentos populares como violão, bateria, teclado, canto, cavaquinho, contrabaixo, ukulele, até instrumentos orquestrais como violino, viola classica,
+                  violoncello, teoria musical, harmonia e improvisação. Também contamos com Estúdio para produção e gravação de CDs e Web clip.</p>
+        </div>
+
+        <div class="content grid">
+            <div class="textWrap">
+                <img id="aulasP" src="img/aulasP.png" alt="aulas experimentais">
+                <img id="aulas" src="img/AULAS.png" alt="aulas experimentais">
+                <p id="saiba">Saiba mais em <a href="cursos.html" id="cursos"> Cursos</a></p>
+            </div>
+            <img id="guitar" src="img/guitarra2.png" alt="guitarra">
+        </div>
+        <div class="content" style="display: flex;">
+            <div class="faq">
+                <h3 style="text-align: center;">FAQ</h3>
+                <p id="faqDes">Precisa de ajuda? Estamos aqui por você!</p>
+                <div class="pergunta">
+                    <p class="question" onclick="closeOpen(A1)">Quais são os horários de aula?</p>
+                    <p class="answer none" id="A1">As aulas coordenadas pela Novo Tom extendem-se das 9h-11h e das 15h-21h, caso tenha interesse em se matricular,
+                    ou em participar de uma aula experimental,
+                    é necessário verificar a disponibilidade de horário entrando em contato conosco via <a class="link" href="https://wa.me/5514935011828">Whatsapp.</a></p>
+                </div>
+                <div class="pergunta">
+                    <p class="question" onclick="closeOpen(A2)">Como são as aulas?</p>
+                    <p class="answer none" id="A2">As aulas coordenadas pela Novo Tom são presenciais e com profissionais excelentes. São guiadas pelas apostilas exclusivas da Novo Tom e pelas apostilas Keep on Playing; no que diz respeito a disponibilidade de instrumentos a escola fornece seus próprios instrumentos, ou o estudante pode utilizar seu próprio instrumento.</p>
+                </div>
+                <div class="pergunta">
+                    <p class="question" onclick="closeOpen(A3)">Como posso me matricular na Novo Tom?</p>
+                    <p class="answer none" id="A3">Para se inscrever na nossa escola, você pode preencher nosso <a class="link" href="https://forms.gle/jzn3jHFb3BfwuhVe7">formulário</a> e entraremos em contato com você! </p>
+                </div>
+                <div class="pergunta">
+                    <p class="question" onclick="closeOpen(A4)">Qual o valor da mensalidade?</p>
+                    <p class="answer none" id="A4">Mensalidade das aulas com instrumentos: R$150.  Mensalidade do curso de técnica vocal: R$170. Soma-se ao valor da mensalidade o preço das apostilas. O aluno pode optar pelas apostilas Novo Tom (R$85 o módulo), ou pelas apostilas Keep On Playing (R$160 o módulo)</p>
+                </div>
+                <div class="pergunta">
+                    <p class="question" onclick="closeOpen(A5)">Onde fica a escola de música Novo Tom?</p>
+                    <p class="answer none" id="A5">Av. Rio Grande, 725 - Promissão, SP</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,264 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: pinyon;
+    src: url(fonts/PinyonScript-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsS;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppinsR;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsB;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+body{
+    background-color: #0f0f0f;
+}
+p{
+    color: white;
+}
+
+.none{
+    display: none;
+}
+.naveBar{
+    display: flex;
+    font-family: poppinsS;
+    margin-left: 15%;
+}
+.naveItem{
+    transition-duration: 200ms;
+}
+
+h3{
+    color: white;
+    font-family: Ubuntu;
+    border-bottom: solid 2px #ff7b22;
+}
+
+.content{
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+
+.cursoimg{
+    transition-duration: 200ms;
+}
+.cursoimg:hover{
+    transform: scale(1.02);
+}
+.info{
+    text-align: center;
+    background-color: #ff7418;
+
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cursoTitle{
+    font-family: helvetica;
+    font-weight: bold;
+} 
+.cursoDesc{
+    color: #0f0f0f;
+}
+.xmen{
+    display: block;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: end;
+    width: 100%;
+}
+#button{
+    color: white;
+    font-family: poppinsB;
+    background-color: #6212e2;
+    border: #360781;
+    
+
+}
+
+.left{
+    float: left;
+}
+
+#blob{
+    position: absolute;
+    margin: 0;
+}
+
+.content{
+    font-family: poppinsR;
+}
+
+#credits{
+    font-family: poppinsR;
+    text-align: right;
+}
+#credits a{
+    color: #6212e2;
+}
+
+/*tela de pc*/
+@media screen and (min-width: 1601px){
+    #blob{
+        width: 12%;
+        top: 0;
+        left: 0;
+    }
+    .cursoimg{
+        width: 200px;
+        border-radius: 10px;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .info{
+        font-size: 18px;
+        padding: 10px 17px 17px 20px;
+        box-shadow: 5px 5px #6212e2;
+        height: 250px;
+        width: 500px;
+    }
+    .cursoTitle{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    .naveItem:hover{
+        font-size: 19px;
+    }
+    .descricao{
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    .horarios{
+        font-size: 21px;
+    }
+    h3{
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    #button{
+        font-size: 18px;
+        margin-top: 2%;
+    }
+
+}
+
+/*tela de notebook*/
+@media screen and (max-width: 1600px) and (min-width: 426px){
+    .cursoimg{
+        width: 190px;
+        border-radius: 5px;
+        margin-right: 1%;
+    }
+    .info{
+        font-size: 18px;
+        padding: 10px 17px 17px 20px;
+        box-shadow: 5px 5px #6212e2;
+        height: 250px;
+        width: 300px;
+    }
+    .cursoTitle{
+        font-size: 25px;
+    }
+    #blob{
+        width: 16%;
+        top: 0;
+        left: 0;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .naveItem:hover{
+        font-size: 17px;
+    }
+    .descricao{
+        font-size: 17px;
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    .horarios{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    #button{
+        font-size: 18px;
+        margin-top: 2%;
+    }
+}
+
+/*tela de celular*/
+@media screen and (max-width: 425px){
+    #blob{
+        width: 25%;
+        z-index: -2;
+        top: 0;
+        left: 0;
+    }
+    .naveBar{
+        width: 100%;
+        margin: auto;
+    }
+    .naveItem{
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20%;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .cursoimg{
+        width: 200px;
+        border-radius: 5px;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 5%;
+    }
+    .info{
+        box-sizing: content-box;
+        font-size: 18px;
+        padding: 10px 17px 17px 20px;
+        box-shadow: 5px 5px #6212e2;
+        height: 250px;
+        width: 95%;
+    }
+    .cursoTitle{
+        font-size: 30px;
+    }
+    .descricao{
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    #button{
+        font-size: 18px;
+        margin-top: 4%;
+    }
+
+}
